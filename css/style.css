@@ -1,0 +1,471 @@
+@import'utilities.css';
+*{
+	margin:0px;
+	padding:0px;
+}
+body {
+    box-sizing: border-box;
+}
+html{
+	/* scroll-behavior: smooth;  */
+ }
+ 
+/* header part start */
+header{
+	background: #202020;
+	clip-path: polygon(0 0,100% 0,100% 70%,50% 100%,0% 70%);
+}
+/* header part end */
+
+/* start nav bar part */
+.menu-bar{
+	background:#20202066;
+	padding:1.1rem 0;
+	color:#fff;
+}
+a.navbar-brand img {
+    height: 60px;
+    width: 100px;
+    object-fit: cover;
+}
+ul.navbar-nav {
+    margin-right: 6rem;
+}
+
+li.nav-item{
+    padding: 0 1.7rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+	position: relative;
+}
+a.nav-link {
+    color: #fff !important;
+}
+
+a.nav-link:hover {
+    color: #0deeeeed !important;
+}
+
+a.nav-link::before {
+    content: "";
+    position: absolute;
+    top: 34px;
+    left: 0%;
+    border-bottom: 1px solid #0deeeeed;
+    width: 0%;
+    transition: 1s linear;
+}
+
+a.nav-link:hover::before{
+    width: 100%;
+}
+
+
+/* end nav bar part */
+
+/* hero section css start */
+.hero-part{
+	padding: 5rem 0;
+}
+.hero_right{
+	color:#fff;
+}
+.hero_right h3{
+	font-size:2rem;
+	text-transform:uppercase;
+	color:#0deeeeed;
+	font-weight: 400;
+}
+.hero_right h2{
+	font-size:4rem;
+	line-height: 1.1;
+	font-weight: 400;
+	margin-bottom: 1.4rem;
+}
+.hero_right p{
+	line-height: 1.7;
+	margin-bottom: 2rem;
+	color: #cfc3c3;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+}
+/* hero section css end */
+
+/* about section css start */
+.about{
+	padding:7rem 0;
+}
+.about_image img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+.about_text h1{
+	font-size: 1.7rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.about_text h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.about_text p {
+    line-height: 1.7;
+    color: #685050;
+    margin-bottom: 2rem;
+}
+.social a {
+    background: #000;
+    padding: .7rem;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 4px;
+}
+.social a:hover {
+    background: #0deeeeed;
+    color: #000;
+}
+/* about section css end */
+
+/* start my skill section */
+section.my-skill {
+    background: #202020;
+    color: #fff;
+    padding: 5rem 0;
+}
+.my-skill h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 4rem;
+    word-spacing: 6px;
+}
+.skill li {
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    font-family: cursive;
+    font-weight: 400;
+    list-style: none;
+    position: relative;
+}
+
+.skill li::before {
+	content: "";
+	position: absolute;
+	top: calc(100% + 10px);
+	left: 0%;
+	background: #0c6464;
+	height: 10px;
+	width: 100%;
+	border-radius: 1000px;
+}
+
+.skill li::after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0%;
+    background: #0deeeeed;
+    height: 10px;
+    width: 0%;
+    border-radius: 1000px;
+    animation-duration: 6s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.html::after {
+    animation-name: html;
+}
+@keyframes html{
+    to{
+        width:90%;
+    }
+}
+.css::after {
+    animation-name: css;
+}
+@keyframes css{
+    to{
+        width:80%;
+    }
+}
+.bootstrap::after {
+    animation-name: bootstrap;
+}
+@keyframes bootstrap{
+    to{
+        width:70%;
+    }
+}
+.java-script::after {
+    animation-name: java-script;
+}
+@keyframes java-script{
+    to{
+        width:60%;
+    }
+}
+/* end my skill section */
+
+/* start services section */
+.services{
+	padding-top:6rem ;
+	background:#eee;
+}
+.service-header{
+	text-align:center;
+}
+.service-header h1{
+	font-size: 2rem;
+	font-weight: 400;
+	margin-bottom: 1rem;
+	text-align:center;
+}
+.service-header p{
+	font-size: 1.1rem;
+	font-weight: 400;
+	margin-bottom: 7rem;
+}
+.s_card{
+	text-align: center;
+	background: #fff;
+	padding: 2rem 2rem;
+	position: relative;
+	padding-top: 5rem;
+	transition: all 1s;
+	margin-bottom: 6rem;
+}
+.s_card:hover {
+    background: #000;
+    color: #fff;
+}
+.s_card i{
+    position: absolute;
+    top: -15%;
+    padding: 2rem;
+    background: #0deeeeed;
+    font-size: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* end services section */
+
+/* start freelancer section */
+.freelancer{
+	background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/computer.jpg);
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-size:cover;
+	padding:8rem 0;
+	color:#fff;
+	clip-path: polygon(0 0,100% 0,100% 100%,75% 90%,0 100%);
+}
+.freelancer h1{
+	font-size:2rem;
+	font-weight: 400;
+	margin-bottom: 1rem;
+	word-spacing: 2px;
+}
+.freelancer p{
+	font-size: 1.2rem;
+	font-weight: 400;
+	word-spacing: 1.3px;
+	margin-bottom: 3rem;
+}
+/* end freelancer section */
+
+/* start work section */
+.work{
+	padding:6rem 0;
+}
+.work-header{
+	text-align:center;
+}
+.work-header h1{
+	font-size: 2rem;
+	font-weight: 400;
+	margin-bottom: 1rem;
+	text-align:center;
+}
+.work-header p{
+	font-size: 1.1rem;
+	font-weight: 400;
+	margin-bottom: 3rem;
+}
+.w-card {
+    position: relative;
+    margin-bottom: 2rem;
+}
+.w-card img {
+    height: 100%;
+    width: 100%;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:  rgb(37 185 209 / 60%);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height:1.9;
+    letter-spacing:1.1px;
+    word-spacing:2px;
+	opacity:0;
+	transition: all 1s;
+}
+.overlay a{
+    text-decoration:none;
+    color:#fff;
+}
+.overlay:hover{
+	opacity:1;
+}
+
+/* end work section */
+
+/* start blog section */
+.blog{
+	padding:6rem 0;
+	background:#000;
+}
+.blog-header{
+	text-align:center;
+	color:#fff;
+}
+.blog-header h1{
+	font-size: 2rem;
+	font-weight: 400;
+	margin-bottom: 1rem;
+	text-align:center;
+}
+.blog-header p{
+	font-size: 1.2rem;
+	font-weight: 400;
+	word-spacing: 1.3px;
+	margin-bottom: 7rem;
+}
+.blog .card{
+	border:none;
+	margin-bottom: 2rem;
+}
+.blog .card-title h1{
+	font-weight: 500;
+    margin-bottom: 3px;
+    font-size: 1.5rem;
+}
+.blog .card a{
+	text-decoration:none;
+	color:#000;
+}
+.blog .card a:hover{
+	color:#0deeeeed;
+}
+.blog .card-title span{
+	font-size:0.8rem;
+}
+/* end blog section */
+
+/* start contact us section */
+.contact_us{
+	padding:6rem 0;
+}
+.contact-header{
+	text-align:center;
+}
+.contact-header h1{
+	font-size: 2rem;
+	font-weight: 400;
+	margin-bottom: 1rem;
+	text-align:center;
+}
+.contact-header p{
+	font-size: 1.2rem;
+	font-weight: 400;
+	word-spacing: 1.3px;
+	margin-bottom: 5rem;
+}
+.contact_card{
+	text-align:center;
+}
+.contact_card i {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.contact_card h1 {
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin-bottom: .6rem;
+    color: #768181;
+}
+.contact_card h6 {
+    font-size: 1rem;
+    color: #768181;
+    font-weight: 300;
+}
+.input_wrap{
+	display:flex;
+}
+input.form-control {
+    box-shadow: none!important;
+    border: 1px solid #768181!important;
+}
+textarea{
+    box-shadow: none!important;
+    border: 1px solid #768181!important;
+    outline: none!important; 
+    padding:1rem;
+}
+.form-group {
+    margin-bottom: 25px;
+}
+
+.contact_card {
+    margin-bottom: 3rem;
+}
+/* end contact us section */
+
+/* start my location section */
+section.my-location {
+	margin-bottom: 6rem;
+}
+/* end my location section */
+
+/* start footer section */
+footer{
+	background:#202020;
+	padding:40px;
+	text-align:center;
+	color:#fff;
+}
+/* end footer section */
+
+
+/* scroll */
+#scrollicon {
+    background: #0deeeeed;
+    color: #fff;
+    padding: 10px 13px;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    text-align: center;
+    border-radius: 9px;
+    display:none;
+}
+
+i.fas.fa-arrow-up {
+    font-size: 30px;
+    color: #fff;
+}
+/* scroll */
