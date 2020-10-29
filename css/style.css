@@ -13,7 +13,7 @@ html{
 /* header part start */
 header{
 	background: #202020;
-	clip-path: polygon(0 0,100% 0,100% 70%,50% 100%,0% 70%);
+	clip-path:polygon(0 0,100% 0,100% 100%,75% 90%,0 100%);
 }
 /* header part end */
 
@@ -261,7 +261,7 @@ section.my-skill {
 	background-size:cover;
 	padding:8rem 0;
 	color:#fff;
-	clip-path: polygon(0 0,100% 0,100% 100%,75% 90%,0 100%);
+	clip-path: polygon(0 0,100% 0,100% 70%,50% 100%,0% 70%);
 }
 .freelancer h1{
 	font-size:2rem;
